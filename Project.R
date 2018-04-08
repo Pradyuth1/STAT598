@@ -5,4 +5,3 @@ Training_data <- function(a){
   Iris_test <- Iris[1:((1-a)*u), ]
   return(list(Iris_training, Iris_test))
 }
-#kjdrhgjh
