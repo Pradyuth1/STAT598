@@ -96,3 +96,4 @@ values_accuracy
 #Accuracy values for knn inbuilt function
 values_accuracy_knn <- values(Accuracy_knn, c(0.65,0.75,0.85,0.95), c(4, 7, 9, 11, 13, 15))
 values_accuracy_knn
+
