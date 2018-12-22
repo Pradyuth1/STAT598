@@ -96,30 +96,3 @@ values_accuracy
 #Accuracy values for knn inbuilt function
 values_accuracy_knn <- values(Accuracy_knn, c(0.65,0.75,0.85,0.95), c(4, 7, 9, 11, 13, 15))
 values_accuracy_knn
-
-#Error values for a particular function, various sets of data and k
-error_val <- function(func, dataset, k){
-  values <- values(func, dataset, k)
-  error_values <- (1 - values)
-  error_values <- as.data.frame(t(error_values))
-  a<- c(4,7,9,11,13,15)
-  error_values <- cbind(a,error_values)
-  return(error_values)
-}
-
-#Error values for accuracy function
-error_val(Accuracy, c(0.65,0.75,0.85,0.95), c(4, 7, 9, 11, 13, 15))
-
-#Error values for accuracy knn function
-error_val(Accuracy_knn, c(0.65,0.75,0.85,0.95), c(4, 7, 9, 11, 13, 15))
-
-
-
-
-
-
-
-
-
-
-
